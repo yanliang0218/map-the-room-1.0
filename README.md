@@ -1,7 +1,5 @@
 # map-the-room
 
-The link to map-the-room GitHub repository: https://github.ubc.ca/xuezheng/map_the_room
-
 1. This project proposes the development of an autonomous exploration system for a mobile ground robot (TurtleBot platform) operating in a simulated indoor environment (in Gazebo simulation). The goal is to enable the robot to autonomously navigate an unknown space, avoid obstacles, and incrementally build an accurate 2D occupancy map of the entire room with the frontier exploration methodology without prior knowledge of its layout.
 
 2. We have five branches in the repository: main, dev, feature_global-path-planning, feature_local_path_planning, feature_navigation-environment: 
