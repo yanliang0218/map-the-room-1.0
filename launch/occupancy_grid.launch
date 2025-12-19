@@ -1,0 +1,21 @@
+<!-- Description: The launch file that launches necessary nodes for Gazebo simulation and Rviz visualization -->
+
+<launch>
+
+    <!-- Override the world file -->
+    <arg name="world_file" default="$(find map_the_room)/worlds/world_1.world"/>
+
+    <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+        <arg name="world_file" value="$(arg world_file)"/>
+    </include>
+
+    <!-- World
+    <arg name="world_1" default="$(find map_the_room)/worlds/world_1.world"/> -->
+
+    <!-- Nodes -->
+    <node pkg="map_the_room" type="occupancy_grid_node" name="occupancy_grid_node" output="screen"/>
+
+    <!-- RViz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_the_room)/config/occupancy_grid.rviz" />
+
+</launch>

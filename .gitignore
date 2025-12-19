@@ -1,0 +1,26 @@
+# Ignore Build artefacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.idb
+*.dll
+*.zip
+
+# Output Screenshots
+*.jpg
+*.png
+
+# VS Code files
+.vscode/
+
+# CMake Files
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+build/
+out/
+bin/
+lib/
