@@ -2,7 +2,7 @@
 
 1. This project proposes the development of an autonomous exploration system for a mobile ground robot (TurtleBot platform) operating in a simulated indoor environment (in Gazebo simulation). The goal is to enable the robot to autonomously navigate an unknown space, avoid obstacles, and incrementally build an accurate 2D occupancy map of the entire room with the frontier exploration methodology without prior knowledge of its layout.
 
-2. We are making our work a ROS package suited for easy management. The ROS compatible with ROS1 Kinetic and can be compiled in Ubuntu 16.04. According to ChatGPT, this should be the location of our package in the hierarchy to compile: ![](catkin_ws_structure.png) 
+2. We are making our work a ROS package suited for easy management. The ROS compatible with ROS1 Kinetic and can be compiled in Ubuntu 16.04. This should be the location of our package in the hierarchy to compile: ![](catkin_ws_structure.png) 
 
 3. This repository only contains the ROS package `map-the-room`, not the catkin_ws, to reproduce the result, you will have to create your own catkin_ws and build the ROS package. The **CMakeLists.txt** is ready to use to build the package. The catkin_ws should be created according to ROS tutorial: https://wiki.ros.org/catkin/Tutorials/create_a_workspace. If you download our repo to other location, move the repo to the location shown in the graph above:   
 `mv ~/map-the-room ~/catkin_ws/src/`  
