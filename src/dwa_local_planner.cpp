@@ -2,7 +2,7 @@
 Name: Liang Yan
 Student Name: 33140351 
 File: map_the_room/dwa_local_planner.h
-Purpose: Contains the PathTracker class definition. 
+Purpose: Contains the DWALocalPlanner class definition. 
 Description: evaluates sample trajectories and compute command. also contains 
              bumper recovery logic, and rotate_for_angle maneuver
 **********************************************************************************/
